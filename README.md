@@ -144,8 +144,5 @@ curl -H "X-API-KEY: secret-key" "http://localhost:8000/api/v1/organizations/1"
 - Swagger UI: `http://localhost:8000/docs`
 - Redoc: `http://localhost:8000/redoc`
 
-### Замечания по геопоиску
-Текущая реализация использует приближение через ограничивающий прямоугольник для радиуса (1° широты ≈ 111 км, долготы — с учетом cos(lat)). Для боевого использования можно заменить на PostGIS или точную реализацию Haversine/Great-circle с индексами.
-
 
 
